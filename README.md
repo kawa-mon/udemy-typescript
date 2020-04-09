@@ -21,5 +21,7 @@
 - **--save-dev** をつけることで開発環境だけで動くようになる
 - `$ ./node_modules/.bin/tsc [ファイルパス]` で TypeScript から JavaScript にトランスパイルできる
 - `$ npx src [ファイルパス]` でも可能
+### ts-node
+- `npx ts-node [ファイルパス]` でトランスパイルと実行を同時に行ってくれる
 
 ## 内容
