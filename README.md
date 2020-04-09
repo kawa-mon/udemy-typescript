@@ -25,5 +25,9 @@
 - `npx ts-node [ファイルパス]` でトランスパイルと実行を同時に行ってくれる
 ### ts-node-dev
 - `npx ts-node-dev --respawn [ファイルパス]`  でファイルが修正されるたびにトランスパイルと実行を同時に行ってくれる
+### tsconfig.json
+- tsc コマンドによってトランスパイルされるときのオプションをまとめるファイル
+- `npx tsc --init` でデフォルト設定で自動生成される
+- デフォルト：https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 ## 内容
