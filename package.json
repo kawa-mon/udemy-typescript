@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kawa-mon/udemy-typescript/issues"
   },
-  "homepage": "https://github.com/kawa-mon/udemy-typescript#readme"
+  "homepage": "https://github.com/kawa-mon/udemy-typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
