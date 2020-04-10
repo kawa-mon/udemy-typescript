@@ -32,3 +32,4 @@
 - デフォルト：https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 ## 内容
+- JSからTSにリプレイスするときなど暫定的に any 型を使うのは良いが、基本的には型定義する([src/any.ts](./src/any.ts))
