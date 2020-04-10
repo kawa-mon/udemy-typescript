@@ -5,6 +5,7 @@
 - Node.js v13.11.0
 - npm v6.14.4
 - TypeScript v3.7.5
+- ts-node v8.5.4
 
 ## TypeScript
 - TypeScript は JavaScript の全てを包括している
