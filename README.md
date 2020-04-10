@@ -9,6 +9,7 @@
 
 ## TypeScript
 - TypeScript は JavaScript の全てを包括している
+- **型安全によってバグを減らす環境を手に入れられることが大きな利点**
 
 ## 各種設定について
 ### .gitignore
