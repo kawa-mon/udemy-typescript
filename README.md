@@ -50,3 +50,4 @@
 - 名前空間を作って外からアクセスするときには、`export` を class の前につける([./src/namespaces.ts](./src/namespaces.ts))
 - 継承元で初期化出来るものはそちらに渡し、こちらでできる初期化だけ明示的に行う([./src/inheritance.ts](./src/inheritance.ts))
 - 抽象クラスと抽象メソッドは継承先に処理を書く。MUST機能を抽象化しておけば、コンパイル時に未使用だったら教えてくれる([./src/abstract-classes.ts](./src/abstract-classes.ts))
+- TS ではクラスは1つしか継承できないが、インターフェイスは複数実装できる
