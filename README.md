@@ -52,3 +52,4 @@
 - 抽象クラスと抽象メソッドは継承先に処理を書く。MUST機能を抽象化しておけば、コンパイル時に未使用だったら教えてくれる([./src/abstract-classes.ts](./src/abstract-classes.ts))
 - TS ではクラスは1つしか継承できないが、インターフェイスは複数実装できる([./src/return-of-interfaces.ts](./src/return-of-interfaces.ts))
 - 複数の型で同じ処理を作りたいとき、ジェネリクス `<T>` を用いる([./src/generics.ts](./src/generics.ts))
+- 型アサーションは `as` と `<>` を用いる方法2つがあるが、後者は React の記法と被るので非推奨([./src/type-assertions.ts](./src/type-assertions.ts))
