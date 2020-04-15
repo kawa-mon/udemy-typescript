@@ -34,19 +34,19 @@
 
 ## 内容
 - JSからTSにリプレイスするときなど暫定的に any 型を使うのは良いが、基本的には型定義する([src/any.ts](./src/any.ts))
-- 戻り値がない関数は void 型を指定する
-- エラー処理などのように戻ってこない関数は never 型を指定する
-- 暫定的に unknown 型を付けておき、typeof で型ガードしながら安全に実行することも出来る
-- 型は既存の型を足し合わせるだけで作ることが可能（交差型）
-- 複数の型を持ちうる場合は共用型で指定する
-- 漠然と型を指定すると困るときは literal 型を用いてスコープを狭める
-- オプショナル引数は引数名の後ろに ? をつける
-- オーバーロードはシグネチャを用いて行う
+- 戻り値がない関数は void 型を指定する([./src/void.ts](./src/void.ts))
+- エラー処理などのように戻ってこない関数は never 型を指定する([./src/never.ts](./src/never.ts))
+- 暫定的に unknown 型を付けておき、typeof で型ガードしながら安全に実行することも出来る([./src/unknown.ts](./src/unknown.ts))
+- 型は既存の型を足し合わせるだけで作ることが可能（交差型）([./src/intersection.ts](./src/intersection.ts))
+- 複数の型を持ちうる場合は共用型で指定する([./src/union.ts](./src/union.ts))
+- 漠然と型を指定すると困るときは literal 型を用いてスコープを狭める([./src/literal.ts](./src/literal.ts))
+- オプショナル引数は引数名の後ろに ? をつける([./src/optional-arguments.ts](./src/optional-arguments.ts))
+- オーバーロードはシグネチャを用いて行う([./src/overloads.ts](./src/overloads.ts))
   - シグネチャは関数定義の手前に書く
   - 型定義は各シグネチャで行い、実態の関数は any 型で良い
-- constructor には型定義しない言語仕様になっている
-- TS では constructor の引数にアクセス修飾子をつけることで自動で初期化処理まで行ってくれる
-- getter, setter によるメンバ変数のリネームは慣習的に `_` を接頭語としてつける
-- 名前空間を作って外からアクセスするときには、`export` を class の前につける
-- 継承元で初期化出来るものはそちらに渡し、こちらでできる初期化だけ明示的に行う
+- constructor には型定義しない言語仕様になっている([./src/my-first-class.ts](./src/my-first-class.ts))
+- TS では constructor の引数にアクセス修飾子をつけることで自動で初期化処理まで行ってくれる([./src/more-constructor.ts](./src/more-constructor.ts))
+- getter, setter によるメンバ変数のリネームは慣習的に `_` を接頭語としてつける([./src/getter-and-setter.ts](./src/getter-and-setter.ts))
+- 名前空間を作って外からアクセスするときには、`export` を class の前につける([./src/namespaces.ts](./src/namespaces.ts))
+- 継承元で初期化出来るものはそちらに渡し、こちらでできる初期化だけ明示的に行う([./src/inheritance.ts](./src/inheritance.ts))
 - 抽象クラスと抽象メソッドは継承先に処理を書く。MUST機能を抽象化しておけば、コンパイル時に未使用だったら教えてくれる([./src/abstract-classes.ts](./src/abstract-classes.ts))
