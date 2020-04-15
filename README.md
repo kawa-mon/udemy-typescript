@@ -53,3 +53,4 @@
 - TS ではクラスは1つしか継承できないが、インターフェイスは複数実装できる([./src/return-of-interfaces.ts](./src/return-of-interfaces.ts))
 - 複数の型で同じ処理を作りたいとき、ジェネリクス `<T>` を用いる([./src/generics.ts](./src/generics.ts))
 - 型アサーションは `as` と `<>` を用いる方法2つがあるが、後者は React の記法と被るので非推奨([./src/type-assertions.ts](./src/type-assertions.ts))
+- const アサーションは変数に用いると定数のように扱える。**オブジェクトに用いると全てのプロパティが readonly になる**。([./src/as-const.ts](./src/as-const.ts))
