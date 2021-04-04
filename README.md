@@ -70,3 +70,9 @@
 - 複数の型で同じ処理を作りたいとき、ジェネリクス `<T>` を用いる([./src/generics.ts](./src/generics.ts))
 - 型アサーションは `as` と `<>` を用いる方法 2 つがあるが、後者は React の記法と被るので非推奨([./src/type-assertions.ts](./src/type-assertions.ts))
 - const アサーションは変数に用いると定数のように扱える。**オブジェクトに用いると全てのプロパティが readonly になる**。([./src/as-const.ts](./src/as-const.ts))
+
+### セクション 6
+
+- Utility Types：TS が標準で提供してくれている便利な型
+  - Partial：すべてのプロパティをオプショナルにする
+  - Required：すべてのプロパティを必須にする
