@@ -81,3 +81,6 @@
   - Exclude：ユニオン型の群から一部を除外したい場合に利用する
   - Extract：ユニオン型の群から一部を抽出したい場合に利用する
   - NonNullable：ユニオン型の群から null や undefined を除外したい場合に利用する
+- Conditional Types：条件型 `T extends U ? X : Y`
+- Distributive Conditional Types：分配条件型
+  - [公式ドキュメントのリンク](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html)
