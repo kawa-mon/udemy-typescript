@@ -85,6 +85,9 @@
     - 第一引数はオブジェクトの型、第 2 引数は欲しいキー
   - Omit：あるオブジェクト型から一部だけ除外して新たな型を作りたいときに利用する
     - 第一引数はオブジェクトの型、第 2 引数は不要なキー
-- Conditional Types：条件型 `T extends U ? X : Y`
-- Distributive Conditional Types：分配条件型
-  - [公式ドキュメントのリンク](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html)
+- Conditional Types：TS が標準で提供してくれている条件型
+  - `T extends U ? X : Y`
+  - Distributive Conditional Types：分配条件型
+    - [公式ドキュメントのリンク](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html)
+  - Return Types：関数の戻り値の型を返す
+    - `infer`：型の情報を取り出せる（inference 推論の意味）
