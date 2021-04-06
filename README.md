@@ -92,3 +92,4 @@
   - Return Types：関数の戻り値の型を返す
     - `infer`：型の情報を取り出せる（inference 推論の意味）
   - Parameters：関数の引数の型をタプルとして抽出する
+  - Constructor Parameters：クラスのインスタンスの引数の型をタプルとして抽出する
